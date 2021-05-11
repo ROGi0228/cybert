@@ -11,6 +11,7 @@
     <title>CyberT</title>
 </head>
 <body>
+    <div class="wrapper__site">
     <header class="header">
         <div class="container">
             <div class="menu">
@@ -27,70 +28,29 @@
     
     </header>
 
+    <div class="sign-in">
+        <form action="#" class="form__sign-in">
+          
+            <div class="container_sign-in">
+              <label for="uname"><b>Логин</b></label>
+              <input type="text" placeholder="Введите логин" name="uname" required>
+          
+              <label for="psw"><b>Пароль</b></label>
+              <input type="password" placeholder="Введите пароль" name="psw" required>
+          
+              <button type="submit" class="btn_sign-in">Войти</button>
+              <div class="wrapper-box">
+                <label>
+                    <input type="checkbox" name="remember"> Запомнить на этом компьютере
+                </label>
+                <span class="psw">Забыли <a href="#">пароль?</a></span>
+              </div>
+            </div>
+          </form>
+    </div>
 
     <main class="content">
         <img src="img/background_img.png" alt="background-img" class="background-img">
-
-        <div class="container">
-
-            <div class="content-box">
-                <div class="content__about-us">
-                    <img src="img/logo__body.svg" alt="body-logo" class="body-logo">
-                    <div class="content-text">
-                        <p class="content__title">Не трать время в пустую</p>
-                        <p class="content__subtitle">Начни зарабатывать на своих любимых играх</p>
-                        <a href="reg.html" class="create_profile">Создать учетную запись</a>
-                    </div>
-                </div>
-                <img src="img/human.png" alt="human picture" class="human">
-            </div>
-
-            <div class="cards">
-                <div class="card">
-                    <img src="img/support.svg" alt="support" class="support">
-                    <p class="card__text">24/7 контроль честности игры(читеры не пройдут)</p>
-                </div>
-                <div class="card">
-                    <img src="img/square.svg" alt="square" class="square">
-                    <p class="card__text">Никто из команды не заруинит игру</p>
-                </div>
-                <div class="card">
-                    <img src="img/rating.svg" alt="rating" class="rating">
-                    <p class="card__text">Внутренняя система рейтинга не позволит испортить тебе игру</p>
-                </div>
-                <div class="card">
-                    <img src="img/fist.svg" alt="fist" class="fist">
-                    <p class="card__text">Ты сам выбираешь сумму ставки</p>
-                </div>
-            </div>
-
-
-
-            <div class="slider">
-                <div class="slider-list">
-                        <div class="slider-element fade ">
-                            <img src="img/Dota_2 1.svg" alt="Dota 2" class="slider-logo">
-                            <a href="reg.html" class="header__item slider-button">Регистрация</a>
-                            <img src="img/ursa.svg" alt="Ursa" class="slider-hero">
-                        </div>
-                        <div class="slider-element">
-                            <img src="img/Dota_2 1.svg" alt="Dota 2" class="slider-logo">
-                            <a href="reg.html" class="header__item slider-button">Регистрация</a>
-                            <img src="img/ursa.svg" alt="Ursa" class="slider-hero">
-                        </div>
-                        <div class="slider-element">
-                            <img src="img/Dota_2 1.svg" alt="Dota 2" class="slider-logo">
-                            <a href="reg.html" class="header__item slider-button">Регистрация</a>
-                            <img src="img/ursa.svg" alt="Ursa" class="slider-hero">
-                        </div>
-
-                        <a  class="prev" onclick="plusSlides(-1)">&#10094</a>
-                        <a  class="next" onclick="plusSlides(1)">&#10095</a>
-                </div>
-            </div>
-
-
-        </div>
     </main>
 
 
@@ -140,7 +100,7 @@
         </div>
         
     </div>
-
-    <script src="js/index.js"></script>
+</div>
+    
 </body>
 </html>
