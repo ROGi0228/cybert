@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: url("../img/dota2_bg.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center;
+    padding: 43px 0 67px 38px;
+
+}
+.wrapper{
+    display: flex;
+}
+.vertical-block{
+    background: linear-gradient(0.32deg, #0B0E1C -5.79%, #353437 114.59%);
+    box-shadow: 0px -5px 25px rgba(0, 3, 32, 0.5);
+    max-width: 316px;
+    height: 700px;
+    padding: 35px 33px;
+    margin-right: 38px;
+}
+
+.logo{
+    border-bottom: 2px solid #3E3E3E;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    width: 234.59px;
+}
+
+
+.vertical__menu-item{
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: #959595;
+    width: 100%;
+    padding: 13px 20px;
+}
+
+.vertical__menu-item:hover{
+    background-color: #5E3232;
+    color: #fff;
+    transition: .4s;
+}
+
+.vertical__menu{
+    border-bottom: 2px solid #3E3E3E;
+    padding-bottom: 220px;
+    margin-bottom: 30px;
+}
+
+.Terms-of-use{
+    text-decoration: none;
+    color: #959595;
+    font-size: 14px;
+}
+
+
+.horizontal-blocks{
+    background: linear-gradient(0.32deg, #0B0E1C -5.79%, #353437 114.59%);
+    box-shadow: 0px -5px 25px rgba(0, 3, 32, 0.5);
+    height: 100px;
+    width: 100%;
+}
+
+.user-data{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+  /*Выпадающий список игр*/
+
+  .select-game{
+    padding: 10px;
+    width: 150px;
+    position: relative;
+  }
+
+  .select-game.is-active .select-game__body{
+    display: block;
+  }
+
+  .select-game__header{
+      display: flex;
+      cursor: pointer;
+      margin-left: 10px;
+  }
+
+  .select-game__icon{
+    border: 1px solid #fff;
+    border-width: 0 0 3px 3px;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    border-radius: 2px;
+    margin-top: 25px;
+    line-height: 0;
+    font-size: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  
+  .select-game__icon:first-child{
+    margin-bottom: 25px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+  .select-game__current{
+      line-height: 24px;
+      padding: 8px;
+  }
+
+  .select-game__body{
+      left: 0;
+      position: absolute;
+      right: 0;
+      border-top: 0;
+      top: 100%;
+      margin-left: 10px;
+      display: none;
+      z-index: 10;
+
+  }
+
+
+  .select-game__item{
+      padding: 8px;
+      margin-left: 10px;
+      cursor: pointer;
+      width: 100%;
+  }
+
+  .select-game__item:hover{
+    background-color: rgba(255, 255, 255, 0.575);
+  }
+
+
+  /*Баланс*/
+
+  .balance{
+    display: flex;
+    background: radial-gradient(50% 50% at 50% 50%, #3A3A3A 0%, #232323 100%);
+    border: 1px solid #676767;
+    border-radius: 15px;
+    padding: 5px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 182px;
+  }
+
+  .amount__balance{
+    display: flex;
+    background: radial-gradient(50% 50% at 50% 50%, #3A3A3A 0%, #232323 100%);
+    border: 1px solid #676767;
+    border-radius: 15px;
+    padding: 7.5px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 182px;
+  }
+
+  .bonuce-amount__balance{
+    display: flex;
+    background: radial-gradient(50% 50% at 50% 50%, #3A3A3A 0%, #232323 100%);
+    border: 1px solid #676767;
+    border-radius: 15px;
+    padding: 5px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 140px;
+  }
+
+
+  .blocked-amount p{
+      margin-bottom: 5px;
+      margin-right: 5px;
+      margin-left: 5px;
+      color: #666666;
+  }
+
+  .bonuce-amount p{
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #666666;
+  }
+
+
+
+
+  .amount__item a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #666666;
+    text-decoration: underline;
+  }
+
+
+  .gold{
+      margin-top: -8px;
+  }
+
+  .balance p{
+    color: #FFC83A;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0px 0px 6px rgba(255, 219, 91, 0.6);
+  }
+
+  .amount__balance p{
+    color: #FFC83A;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0px 0px 6px rgba(255, 219, 91, 0.6);
+  }
+
+  .bonuce-amount__balance p{
+    color: #FFC83A;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0px 0px 6px rgba(255, 219, 91, 0.6);
+  }
+
+  .blocked-amount{
+    margin-bottom: auto;
+    margin-right: 50px;
+  }
+
+  .amount{
+      margin-bottom: auto;
+      margin-right: 50px;
+  }
+
+
+  .amount ul{
+      display: flex;
+  }
+
+  .amount__item{
+    list-style: none;
+  }
+
+  .bonuce-amount{
+    margin-bottom: auto;
+    margin-right: 50px;
+  }
+
+  
+
+  /*Выбор валюты*/
+
+  .select_currency form select{
+    padding: 13.9px;
+    outline: none;
+    position: relative;
+    background: radial-gradient(50% 50% at 50% 50%, #3A3A3A 0%, #232323 100%);
+    border: 1px solid #676767;
+    border-radius: 15px;
+    color: #FFC83A;
+    margin-top: 26px;
+  }
+
+
+
+  /*настрйоки*/
+
+  .select-settings{
+    padding-top: 20px;
+    width: 170px;
+    position: relative;
+    color: #fff;
+    margin-left: 10px;
+  }
+
+
+  .select-settings__current p{
+    margin-left: 5px;
+  }
+
+  .select-settings__icon{
+    border: 1px solid #fff;
+    border-width: 0 0 3px 3px;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    border-radius: 2px;
+    margin-top: 15px;
+    line-height: 0;
+    font-size: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  
+  .select-settings__icon:first-child{
+    margin-bottom: 25px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+
+
+.select-settings__current{
+  align-items: center;
+  display: flex;
+  line-height: 24px;
+  padding: 8px;
+}
+
+.select-settings__body{
+
+  left: 0;
+  position: absolute;
+  right: 0;
+  border-top: 0;
+  top: 100%;
+  margin-left: 10px;
+  display: none;
+
+}
+
+
+.select-settings__item{
+  padding: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.select-settings__item:hover{
+background-color: rgba(255, 255, 255, 0.575);
+}
+
+
+.select-settings.is-active .select-settings__body{
+  display: block;
+}
+
+.select-settings__header{
+    display: flex;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+/*Выход*/
+
+.log-out__block{
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  display: flex;
+}
+
+.log-out__block a{
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  margin-bottom: auto;
+  margin-left: 5px;
+}
+
+
+/*форма поиска*/
+.navbar-action{
+  display: flex;
+}
+
+
+.sort form select{
+  outline: none;
+  background: linear-gradient(180deg, #000 0%, #000 100%);
+  box-shadow: 0px 4px 24px rgba(4, 4, 4, 0.5);  
+  height: 42px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.sort form select option{
+  background: linear-gradient(180deg, #000 0%, #000 100%);
+  box-shadow: 0px 4px 24px rgba(4, 4, 4, 0.5); 
+
+}
+
+.navbar-action__search {
+  position: relative;
+  width: 300px;
+}
+
+.search{
+  margin-right: 130px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  outline: none;
+  background: #fff;
+  color: #9E9C9C;
+}
+.navbar-action__search button {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #000;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+button:before {
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+.button_create{
+  margin-left: 100px;
+}
+
+
+

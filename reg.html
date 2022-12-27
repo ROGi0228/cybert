@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Group.png" type="image/x-icon">
+    <title>CyberT</title>
+</head>
+<body>
+    <div class="wrapper__site">
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.svg" alt="logo"></a>
+                </div>
+                <nav class="header__menu">
+                    <a href="reg.html" class="header__item registration" onclick="openForm()">Зарегистрироваться</a>
+                    <a href="sign-in.html" class="header__item">Войти</a>
+                </nav>
+            </div>
+        </div>
+
+    
+    </header>
+
+    <div class="form-popup" id="myForm">
+        <form action="#" class="form-container" method="POST" enctype="multipart/form-data">
+          <h1 class="reg__text">Регистрация</h1>
+            
+          <label for="name"><b>ФИО</b></label>
+          <input type="text" placeholder="Введите ФИО" name="name" required>
+
+          <label for="login"><b>Логин</b></label>
+          <input type="text" placeholder="Введите логин" name="login" required>
+
+          <label for="age"><b>Возраст</b></label>
+          <input type="age" placeholder="Введите возраст" name="age" required>
+
+          <label for="region"><b>Регион</b></label>
+          <input type="text" placeholder="Введите регион" name="region" required>
+
+          <label for="game"><b>Набор предпочитаемых игр</b></label>
+          <select id="games">
+            <option value="choose">Выберите игру</option>
+            <option value="Dota2">Dota 2</option>
+            <option value="CSGO">Counter-Strike: Global Offensive</option>
+            <option value="PUBG">PUBG</option>
+            <option value="LOL">LOL</option>
+          </select>
+          <button class="btn_steam" type="button"><a href="https://steamcommunity.com/login/home/?goto=login%2Fhome%2F%3Fgoto%3D" >Войти через стим</a></button>
+
+          <label for="email"><b>Почта</b></label>
+          <input type="email" placeholder="Введите Почту" name="email" required>
+
+          <label for="tel"><b>Телефон</b></label>
+          <input type="tel" pattern="[0-9]{11}"placeholder="Введите телефон" name="tel" required>
+
+          <label for="promo"><b>Промо код</b></label>
+          <input type="text" placeholder="Введите промо код" name="text">
+
+          <label for="raiting"><b>Скриншот с рейтингом<br></b></label>
+          <div class="input__wrapper">
+            <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+            <label for="input__file" class="input__file-button">
+               <span class="input__file-button-text">Выберите файл</span>
+            </label>
+         </div>
+            
+          <p class="agree"><input type="checkbox" name="agree"  onMouseDown="this.isChecked=this.checked;" onClick="this.checked=!this.isChecked;"  required> Пользовательское соглашение</p>
+      
+          <button type="submit" class="btn">Зарегистрироваться</button>
+          
+        </form>
+      </div>
+
+    <main class="content">
+        <img src="background_img.png" alt="background-img" class="background-img">
+    </main>
+
+
+ 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__menu">
+                <img src="logo.svg" alt="logo" class="footer__logo">
+                <div class="footer__menu-wrapper">
+                    <div class="footer__menu-items">
+                        <a href="#" class="footer__menu-link">Блокировки</a>
+                        <a href="#" class="footer__menu-link">Поддержка</a>
+                        <a href="#" class="footer__menu-link">FAQ</a>
+                    </div>
+                    <div class="footer__menu-items">
+                        <a href="#" class="footer__menu-link">О компании</a>
+                        <a href="#" class="footer__menu-link">Клиент Античит</a>
+                        <a href="#" class="footer__menu-link">Клиент</a>
+                    </div>
+                    <div class="footer__menu-items">
+                        <a href="#" class="footer__menu-link">Вакансии</a>
+                        <a href="#" class="footer__menu-link">Разработчики</a>
+                        <a href="#" class="footer__menu-link">Пресса</a>
+                    </div>
+                </div>
+            </div>
+
+    
+        </div>
+        <div class="wrapper">
+            <div class="privacy">
+                <p class="privacy__text">© 2020 ТОО «‎CYBERT» <br>Все права защищены (с).</p>
+            </div>
+            <div class="rule">
+                <p class="rule__text">Участие в азартных играх запрещено <br>лицам, не достигшим 21 года!</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="mobile-version">
+        <div class="container">
+            <img src="logo__body.svg" alt="logo__mobile-version" class="logo__mobile-version">
+            <p class="mobile__version-text">К сожалению мобильная версия сайта не поддерживается</p>
+        </div>
+        
+    </div>
+</div>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script src="js/reg.js"></script>
+    
+</body>
+</html>
